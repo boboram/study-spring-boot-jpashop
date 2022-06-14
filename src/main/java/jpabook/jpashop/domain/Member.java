@@ -21,5 +21,5 @@ public class Member {
     private Address address;
 
     @OneToMany(mappedBy = "member") //일대다 Order.member 에 의해서 매핑
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>(); //컬렉션은 필드에서 바로 초기화하는 것이 안전
 }
