@@ -4,6 +4,7 @@
 ```
 cd ~/SpringStudy
 cd h2
+cd bin
 ./h2.sh
 ```
 - 외래 키가 있는 곳을 연관관계의 주인으로 정해라. 
