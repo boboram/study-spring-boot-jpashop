@@ -11,8 +11,8 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) //한 테이블에 모두 넣음
 @DiscriminatorColumn(name = "dtype")
-@Getter
-public abstract class Item {
+@Getter @Setter
+public class Item {
 
     @Id
     @GeneratedValue
