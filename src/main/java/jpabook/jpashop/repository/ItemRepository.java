@@ -15,7 +15,8 @@ public class ItemRepository {
     public void save(Item item) {
         if (item.getId() == null) {
             em.persist(item);
-        } else {
+        } else { //병합 사용
+            //병합은 준영속 상태의 엔티티를 영속 상태로 변경할 때 사용하는 기능
             em.merge(item);
         }
     }
